@@ -1,0 +1,12 @@
+server:
+  port: 8001
+  
+spring:
+  cloud:
+    consul:
+      discovery:
+        instanceId: movie-service
+        health-check-interval: 15s
+      config:
+        management: 
+          enabled: true
